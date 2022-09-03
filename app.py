@@ -80,7 +80,8 @@ sequence = []
 sentence = []
 threshold = 0.9
 tts = False
-actions = os.listdir('MP_Data')
+# actions = os.listdir('MP_Data')
+actions = ["Bye","Father","Good","Happy","Hello","How","Hungry","Love","Sad","Thank You","You"]
 label_map = {label:num for num, label in enumerate(actions)}
 
 # Text to speak config:
