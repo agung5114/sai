@@ -85,12 +85,12 @@ actions = ["Bye","Father","Good","Happy","Hello","How","Hungry","Love","Sad","Th
 label_map = {label:num for num, label in enumerate(actions)}
 
 # Text to speak config:
-engine = pyttsx3.init()
-if sentence == []:
-    pass
-else:
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[10].id)
+# engine = pyttsx3.init()
+# if sentence == []:
+#     pass
+# else:
+#     voices = engine.getProperty('voices')
+#     engine.setProperty('voice', voices[10].id)
 
 ###############################################################################################
                                             # STREAMLIT #
@@ -110,7 +110,8 @@ with col1:
 with col2:
     show_landmarks = st.checkbox('Show landmarks')
 with col3:
-    speak = st.checkbox('Speak')
+    st.empty()
+#     speak = st.checkbox('Speak')
 
 # Webcam
 FRAME_WINDOW = st.image([])
